@@ -10,8 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==================================================
     // --- ここにスライドショーに使いたい画像パスを追加していく ---
     const images = [
-        'images/works/noimage.png',
-        'images/works/back.png'
+        'images/works/JewelryHunter_World.png',
+        'images/works/RunAndGunSurvivor.png',
+        'images/works/scratch_shooting.jpg'
     ];
 
     const slideArea = document.querySelector('.slide-area');

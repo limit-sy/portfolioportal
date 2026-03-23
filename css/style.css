@@ -88,7 +88,7 @@ section {
 }
 
 /* -------------------
- Hunbarger-menu
+ Hamburger-menu
  ------------------- */
 .menu-icon {
   width: 50px;
@@ -238,8 +238,8 @@ section {
 }
 
 .grid-box {
-  /* 縦並び */
-  display: flex;
+  /* 横並び */
+  display: row;
   flex-direction: column;
   /* 上下は端から端にバランスよく要素を配置 */
   justify-content: space-between;
@@ -290,6 +290,10 @@ section {
   padding: 2% 4%;
   border-radius: 6px;
   font-size: 0.8em;
+}
+
+.works-link {
+  display: row;
 }
 
 /* -------------------
