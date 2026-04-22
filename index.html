@@ -62,6 +62,101 @@
           <!-- グリッドで整列 -->
           <div class="portfolio-grid">
             <div class="grid-box">
+              <h3>LuminousConnect</h3>
+              <img
+                src="images/works/LuminousConnect.png"
+                alt="LuminousConnect"
+              />
+              <p>
+                「光」をテーマに、ゴルフの操作システムをパズルへと昇華させた3Dアクションゲームです。<br/>
+                光の弾を「打つ・狙う」という直感的な操作で、離れたオブジェクト同士を接続し、ステージのギミックを解き明かしていきます。<br/>
+                技術面では、LineRendererとRaycastによる軌道予測と接続判定の実装に加え、物語への没入感を高める独自の会話イベントシステムを構築。Unity 6の演出機能を活用し、遊びやすさと世界観の両立を追求しました。
+              </p>
+              <ul>
+                <li>使用言語：C#</li>
+                <li>開発環境：Unity Editor 6000.3.5.f2</li>
+                <li>主要技術：LineRendererによる軌道予測 / 独自会話システム実装 / Raycast判定</li>
+                <li>制作期間：1ヶ月</li>
+              </ul>
+              <div class="works-link">
+                <a
+                  href="https://github.com/limit-sy/LuminousConnect"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHubリポジトリ</a
+                >
+                <a
+                  href="https://limit-sy.github.io/luminousconnect_gameplay/"
+                  target="_blank"
+                  rel="noopener"
+                  >ゲームプレイ</a
+                >
+              </div>
+            </div>
+            <div class="grid-box">
+              <h3>Animal_United_Front</h3>
+              <img
+                src="images/works/Animal_United_Front.png"
+                alt="Animal_United_Front"
+              />
+              <p>
+                4人のチーム開発で制作した、2D横スクロール・アクションゲームです。私はボスキャラクターのAIアルゴリズム全般を担当しました。<br/>
+                コルーチンとフラグ管理を組み合わせ、状況に応じた「逃亡」と「急襲」のステート制御を実装。Vector3.Lerpを用いた滑らかな移動や、Mathf.Atan2等の三角関数を活用し、プレイヤーの位置を正確に追従・攻撃するロジックを構築しました。<br/>
+  共            共同開発を通じ、GitHubでのコード管理や、チーム内の仕様（担当区分）に基づいたモジュール実装の実践的なスキルを習得しました。
+              </p>
+              <ul>
+                <li>使用言語：C#</li>
+                <li>開発環境：Unity Editor 6000.3.5.f2</li>
+                <li>主要技術：コルーチンによる非同期制御 / 三角関数を用いた座標計算 / Lerpによる補間移動</li>
+                <li>制作期間：1ヶ月</li>
+              </ul>
+              <div class="works-link">
+                <a
+                  href="https://github.com/Dyna-Rise/Animal_United_Front_RED"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHubリポジトリ</a
+                >
+                <a
+                  href="https://dynarise2001.xyz/kunren/animal_united_front_red_team/"
+                  target="_blank"
+                  rel="noopener"
+                  >ゲームプレイ</a
+                >
+              </div>
+            </div>
+            <div class="grid-box">
+              <h3>RunAndGunSurvivor</h3>
+              <img
+                src="images/works/RunAndGunSurvivor.png"
+                alt="RunAndGunSurvivor"
+              />
+              <p>
+                自動で前方に疾走するロボットを操作する3Dランアクションゲームです。<br />
+                射撃と近接攻撃を使い分け、多彩なアイテムで自機を強化しながらゴールの踏破を目指します。<br />
+                入力システムを工夫し、スティックの長押し時に『タメ』を作るリピート処理を実装。これにより、意図しない連続移動を防ぎつつ、スピーディーな操作感を実現しました。
+              </p>
+              <ul>
+                <li>使用言語：C#</li>
+                <li>開発環境：Unity Editor 6000.3.5.f2</li>
+                <li>制作期間：1ヶ月</li>
+              </ul>
+              <div class="works-link">
+                <a
+                  href="https://github.com/limit-sy/RunAndGunSurvivor"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHubリポジトリ</a
+                >
+                <a
+                  href="https://limit-sy.github.io/runandgunsurvivor_gameplay/"
+                  target="_blank"
+                  rel="noopener"
+                  >ゲームプレイ</a
+                >
+              </div>
+            </div>
+            <div class="grid-box">
               <h3>JewelryHunter_World</h3>
               <img
                 src="images/works/JewelryHunter_World.png"
@@ -73,41 +168,25 @@
                 ゼルダ風のワールドマップから選んだステージに入り、全ステージをクリアするとボスと戦うことができます。<br />
                 ステージに入るためのロック解除や、ステージクリアのフラグ管理など細かい技術に加え、続きからゲームができるセーブ機能など細かい技術に加え、続きからゲームができるセーブ機能など様々工夫しています。
               </p>
-              <a
-                href="https://github.com/limit-sy/JewelryHunter_World/tree/top"
-                target="_blank"
-                rel="noopener"
-                >作品のGitHub</a
-              >
-              <a
-                href="https://limit-sy.github.io/jewelryhunter_world_gameplay/"
-                target="_blank"
-                rel="noopener"
-                >ゲームプレイ</a
-              >
-            </div>
-            <div class="grid-box">
-              <h3>RunAndGunSurvivor</h3>
-              <img
-                src="images/works/RunAndGunSurvivor.png"
-                alt="RunAndGunSurvivor"
-              />
-              <p>
-                自動で前方に疾走するロボットを操作する3Dランアクションゲームです。<br />
-                射撃と近接攻撃を使い分け、多彩なアイテムで自機を強化しながらゴールの踏破を目指します。
-              </p>
-              <a
-                href="https://github.com/limit-sy/RunAndGunSurvivor"
-                target="_blank"
-                rel="noopener"
-                >作品のGitHub</a
-              >
-              <a
-                href="https://github.com/Dyna-Rise/RunAndGunSurvivor_Sample"
-                target="_blank"
-                rel="noopener"
-                >ゲームプレイ</a
-              >
+              <ul>
+                <li>使用言語：C#</li>
+                <li>開発環境：Unity Editor 6000.3.5.f2</li>
+                <li>制作期間：2ヶ月</li>
+              </ul>
+              <div class="works-link">
+                <a
+                  href="https://github.com/limit-sy/JewelryHunter_World/tree/top"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHubリポジトリ</a
+                >
+                <a
+                  href="https://limit-sy.github.io/jewelryhunter_world_gameplay/"
+                  target="_blank"
+                  rel="noopener"
+                  >ゲームプレイ</a
+                >
+              </div>
             </div>
             <div class="grid-box">
               <h3>2D横スクロールシューティング</h3>
@@ -120,15 +199,116 @@
                 強制スクロールで横長のステージを攻略して、最後にボスとの戦闘を楽しむことができます。<br />
                 変数やリストを駆使してあらかじめ計画したマップを繰り返し構文の入れ子構造で効率的に呼び出して横長のステージを再現しています。
               </p>
-              <a
-                href="https://scratch.mit.edu/projects/1269327073/"
-                target="_blank"
-                rel="noopener"
-                >ゲームプレイ</a
-              >
+              <div class="works-link">
+                <a
+                  href="https://scratch.mit.edu/projects/1269327073/"
+                  target="_blank"
+                  rel="noopener"
+                  >ゲームプレイ</a
+                >
+              </div>
             </div>
           </div>
           <!-- グリッドで整列 の終わり-->
+          <div class="extra-music-area wrapper">
+            <p class="extra-intro-text">
+              開発の傍ら、長年ニンテンドーDS・3DSの「大合奏!バンドブラザーズ」シリーズにて楽曲の打ち込みに取り組んできました。これまでに制作した楽曲は70曲以上にのぼり、一部の楽曲はユーザー制作曲として公式に採用・配信された実績もあります。<br />
+              制作にあたっては、市販の楽譜をベースにしつつ、常に原曲との細かな差異（楽譜の誤植等）を聴感でデバッグし、1音1音の正確な再現にこだわっています。この「仕様（楽譜）を正確に理解し、目標とする成果物（原曲）との差分を埋める」プロセスは、現在のプログラミングにおけるデバッグや品質向上への姿勢にも通じています。<br />
+              いくつか作成した楽曲を載せますので、よろしかったらお聞きください。<br />
+              よろしければお聞きください。
+            </p>
+
+            <div class="music-grid">
+              <div class="music-item">
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/ygGPGxnk-3E"
+                    title="【バンブラP】序曲のマーチVII"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <p class="music-title">
+                  【バンブラP】序曲のマーチVII<br />『ドラゴンクエストVII エデンの戦士たち』より
+                </p>
+              </div>
+              <div class="music-item">
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/OI6e03lgBo0"
+                    title="【バンブラP】粉雪/レミオロメン"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <p class="music-title">
+                  【バンブラP】粉雪/レミオロメン
+                </p>
+              </div>
+              <div class="music-item">
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/URoGS_M-8Ls"
+                    title="【バンブラP】やさしくなりたい/斉藤和義"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <p class="music-title">
+                  【バンブラP】やさしくなりたい/斉藤和義
+                </p>
+              </div>
+              <div class="music-item">
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/DxOTmjorBtI"
+                    title="【バンブラP】舞台に立って/YOASOBI"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <p class="music-title">
+                  【バンブラP】舞台に立って/YOASOBI
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- ポートフォリオ紹介 の終わり-->
 

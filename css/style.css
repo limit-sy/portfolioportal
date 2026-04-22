@@ -15,11 +15,13 @@ body {
   line-height: 1.75;
 }
 
+/*
 ul,
 ol,
 dl {
-  list-style: none;
+  : none;
 }
+*/
 
 a {
   color: #fff;
@@ -238,16 +240,17 @@ section {
 }
 
 .grid-box {
-  /* 横並び */
-  display: row;
+  /* 縦並び */
+  display: flex;
   flex-direction: column;
   /* 上下は端から端にバランスよく要素を配置 */
-  justify-content: space-between;
+  justify-content: flex-start;
   /* 左右は左寄せ */
-  align-items: flex-start;
+  align-items: stretch;
   /* 横縦比8：10 */
-  aspect-ratio: 10 / 8;
-  padding: 12px;
+  aspect-ratio: /*10 / 8*/auto;
+  min-height: 550px;  /* 全体の最低の高さを揃える */
+  padding: /*12px*/20px;
   border-radius: 8px;
 
   /* 背景色は白だが透明度が高い */
@@ -281,8 +284,18 @@ section {
 
 .grid-box p {
   font-size: 0.9em;
+  flex-grow: 1; /* これが重要！余った縦のスペースをこの要素が占有します */
   /* 説明文章が短くても最小の高さを担保 */
-  min-height: 3.8em;
+  /*min-height: 3.8em;*/
+  margin-bottom: 15px;
+}
+
+/* --- ボタンエリアの横並び設定 --- */
+.works-link {
+  display: flex;
+  gap: 10px; /* ボタン同士の隙間 */
+  justify-content: flex-start;
+  margin-top: auto; /* 念押しで最下部に配置 */
 }
 
 .grid-box a {
@@ -290,10 +303,157 @@ section {
   padding: 2% 4%;
   border-radius: 6px;
   font-size: 0.8em;
+  text-align: center;
+  flex: 1; /* ボタンの幅を均等にする（お好みで） */
+  transition: background 0.3s;
+}
+
+/* ホバー演出を追加するとプロっぽくなります */
+.grid-box a:hover {
+  background: #66d;
+}
+
+/* --- 修正箇所：リストの余白を調整 --- */
+.grid-box ul {
+  /* リストの「・」を枠内に収めるための左余白 */
+  padding-left: 1.5em; 
+  /* リスト間の余白を調整（必要に応じて） */
+  margin: 10px 0;
+  /* ポレット（・）を内側に配置する設定 */
+  list-style-position: inside; 
+}
+
+.grid-box li {
+  font-size: 0.85em;
+  /* リスト項目が長くなった時に「・」の横から改行されるように調整 */
+  list-style-type: disc; 
+  margin-bottom: 4px;
 }
 
 .works-link {
   display: row;
+}
+
+/* -------------------
+ extra-music-area (おまけコーナー)
+ ------------------- */
+.extra-music-area {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px dashed #fff5; /* 区切り線 */
+}
+
+.extra-intro-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.95em;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* 動画を中央に、少し小さめに配置 */
+.extra-video-content {
+  max-width: 600px;
+  margin: 0 auto;
+  /* 既存のgrid-boxのスタイルを一部継承 */
+  background: #fff2;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #fff3;
+}
+
+/* YouTubeのレスポンシブ維持用 */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9比率 */
+  margin-bottom: 15px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: none;
+}
+
+.extra-video-title {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* -------------------
+ extra-music-area (おまけ・複数対応版)
+ ------------------- */
+.extra-music-area {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px dashed #fff5;
+}
+
+.extra-intro-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.95em;
+  color: #ddd;
+}
+
+/* 楽曲を並べるためのサブグリッド */
+.music-grid {
+  display: grid;
+  /* メインより一回り小さいサイズ（最小200px）で横に並べる */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 楽曲ひとつひとつの箱 */
+.music-item {
+  background: #fff1; /* メインより少し薄めの背景 */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #fff2;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9比率 */
+  margin-bottom: 10px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: none;
+}
+
+.music-title {
+  font-size: 0.85em;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* スマホ用の微調整 */
+@media (max-width: 480px) {
+  .music-grid {
+    grid-template-columns: 1fr; /* スマホでは1列 */
+  }
 }
 
 /* -------------------
