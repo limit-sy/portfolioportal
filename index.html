@@ -58,6 +58,7 @@
         <!-- ポートフォリオ紹介 -->
         <section id="portfolios" class="portfolios-area">
           <h2>ポートフォリオ</h2>
+          <h3 class="category-title">Game Development</h3>
 
           <!-- グリッドで整列 -->
           <div class="portfolio-grid">
@@ -68,14 +69,18 @@
                 alt="LuminousConnect"
               />
               <p>
-                「光」をテーマに、ゴルフの操作システムをパズルへと昇華させた3Dアクションゲームです。<br/>
-                光の弾を「打つ・狙う」という直感的な操作で、離れたオブジェクト同士を接続し、ステージのギミックを解き明かしていきます。<br/>
-                技術面では、LineRendererとRaycastによる軌道予測と接続判定の実装に加え、物語への没入感を高める独自の会話イベントシステムを構築。Unity 6の演出機能を活用し、遊びやすさと世界観の両立を追求しました。
+                「光」をテーマに、ゴルフの操作システムをパズルへと昇華させた3Dアクションゲームです。<br />
+                光の弾を「打つ・狙う」という直感的な操作で、離れたオブジェクト同士を接続し、ステージのギミックを解き明かしていきます。<br />
+                技術面では、LineRendererとRaycastによる軌道予測と接続判定の実装に加え、物語への没入感を高める独自の会話イベントシステムを構築。Unity
+                6の演出機能を活用し、遊びやすさと世界観の両立を追求しました。
               </p>
               <ul>
                 <li>使用言語：C#</li>
                 <li>開発環境：Unity Editor 6000.3.5.f2</li>
-                <li>主要技術：LineRendererによる軌道予測 / 独自会話システム実装 / Raycast判定</li>
+                <li>
+                  主要技術：LineRendererによる軌道予測 / 独自会話システム実装 /
+                  Raycast判定
+                </li>
                 <li>制作期間：1ヶ月</li>
               </ul>
               <div class="works-link">
@@ -100,14 +105,18 @@
                 alt="Animal_United_Front"
               />
               <p>
-                5人のチーム開発で制作した、2D横スクロール・アクションゲームです。私はボスキャラクターのAIアルゴリズム全般を担当しました。<br/>
-                コルーチンとフラグ管理を組み合わせ、状況に応じた「逃亡」と「急襲」のステート制御を実装。Vector3.Lerpを用いた滑らかな移動や、Mathf.Atan2等の三角関数を活用し、プレイヤーの位置を正確に追従・攻撃するロジックを構築しました。<br/>
-  共            共同開発を通じ、GitHubでのコード管理や、チーム内の仕様（担当区分）に基づいたモジュール実装の実践的なスキルを習得しました。
+                5人のチーム開発で制作した、2D横スクロール・アクションゲームです。私はボスキャラクターのAIアルゴリズム全般を担当しました。<br />
+                コルーチンとフラグ管理を組み合わせ、状況に応じた「逃亡」と「急襲」のステート制御を実装。Vector3.Lerpを用いた滑らかな移動や、Mathf.Atan2等の三角関数を活用し、プレイヤーの位置を正確に追従・攻撃するロジックを構築しました。<br />
+                共
+                共同開発を通じ、GitHubでのコード管理や、チーム内の仕様（担当区分）に基づいたモジュール実装の実践的なスキルを習得しました。
               </p>
               <ul>
                 <li>使用言語：C#</li>
                 <li>開発環境：Unity Editor 6000.3.5.f2</li>
-                <li>主要技術：コルーチンによる非同期制御 / 三角関数を用いた座標計算 / Lerpによる補間移動</li>
+                <li>
+                  主要技術：コルーチンによる非同期制御 /
+                  三角関数を用いた座標計算 / Lerpによる補間移動
+                </li>
                 <li>制作期間：1ヶ月</li>
               </ul>
               <div class="works-link">
@@ -209,6 +218,36 @@
               </div>
             </div>
           </div>
+          <h3 class="category-title" style="margin-top: 60px">
+            Tools & Applications
+          </h3>
+          <div class="portfolio-grid">
+            <div class="grid-box">
+              <h3>ShortcutLinkChecker</h3>
+              <img
+                src="images/works/ShortcutLinkChecker.png"
+                alt="ShortcutLinkChecker"
+              />
+              <p>
+                Windows上の指定したフォルダ内にあるリンク切れショートカット（.lnk）を検出し、一括削除する実用ツールです。<br />
+                インフラ運用の現場での「あったら便利」を形にしました。深い階層のパスを扱うための横スクロール対応や、誤削除防止のためのプロパティ確認機能など、業務効率と安全性を意識したUI/UX設計を行っています。
+              </p>
+              <ul>
+                <li>使用言語：C#</li>
+                <li>フレームワーク：Windows Forms (.NET 10.0)</li>
+                <li>主要技術：COM参照 (Windows Script Host)</li>
+                <li>制作期間：2日</li>
+              </ul>
+              <div class="works-link">
+                <a
+                  href="https://github.com/limit-sy/ShortcutLinkChecker"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHubリポジトリ</a
+                >
+              </div>
+            </div>
+          </div>
           <!-- グリッドで整列 の終わり-->
           <div class="extra-music-area wrapper">
             <p class="extra-intro-text">
@@ -238,7 +277,8 @@
                   </iframe>
                 </div>
                 <p class="music-title">
-                  【バンブラP】序曲のマーチVII<br />『ドラゴンクエストVII エデンの戦士たち』より
+                  【バンブラP】序曲のマーチVII<br />『ドラゴンクエストVII
+                  エデンの戦士たち』より
                 </p>
               </div>
               <div class="music-item">
@@ -259,9 +299,7 @@
                   >
                   </iframe>
                 </div>
-                <p class="music-title">
-                  【バンブラP】粉雪/レミオロメン
-                </p>
+                <p class="music-title">【バンブラP】粉雪/レミオロメン</p>
               </div>
               <div class="music-item">
                 <div class="video-container">
@@ -303,9 +341,7 @@
                   >
                   </iframe>
                 </div>
-                <p class="music-title">
-                  【バンブラP】舞台に立って/YOASOBI
-                </p>
+                <p class="music-title">【バンブラP】舞台に立って/YOASOBI</p>
               </div>
             </div>
           </div>
